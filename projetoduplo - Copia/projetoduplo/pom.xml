@@ -42,12 +42,6 @@
             <scope>test</scope>
         </dependency>
 
-        <!--para o spring saber que a aplicação vai receber requisições HTTP-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-
     </dependencies>
 
     <build>
