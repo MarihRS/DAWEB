@@ -13,15 +13,15 @@ public class EstudanteService {
     @Autowired //dependencia
     private EstudanteRepository estudanteRepository;
 
-    public List<Estudantes> listarEstudantesS() {
+    public List<Estudantes> listarEstudantes() {
         return estudanteRepository.findAll();
     }
 
-    public Estudantes salvarEstudantesS(Estudantes estudante) {
+    public Estudantes salvarEstudantes(Estudantes estudante) {
         return estudanteRepository.save(estudante);
     }
 
-    public void deletarEstudantesS(Long id) {
+    public void deletarEstudantes(Long id) {
         estudanteRepository.deleteById(id);
     }
 }
