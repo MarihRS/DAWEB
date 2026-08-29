@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Disciplina</title>
+</head>
+<body>
+
+    <h1>Cadastrar Disciplina</h1>
+
+    <form id="disciplineForm">
+        <label for="name">Nome da disciplina:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+
+        <label for="code">Código:</label>
+        <input type="text" id="code" name="code" required>
+        <br><br>
+
+        <label for="workload">Carga horária:</label>
+        <input type="number" id="workload" name="workload" required>
+        <br><br>
+
+        <label for="teacher">Professor:</label>
+        <input type="text" id="teacher" name="teacher" required>
+        <br><br>
+
+        <button type="submit">Salvar</button>
+    </form>
+
+    <script>
+        document.getElementById("disciplineForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Disciplina salva com sucesso!");
+        });
+    </script>
+
+</body>
+</html>

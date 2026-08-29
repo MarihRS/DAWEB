@@ -27,11 +27,9 @@ public class DisciplinaController {
 
             disciplinaService.salvarDisciplina(disciplina);
 
-            //addInfoMessage("Save", String.format("Uma nova disciplina foi criada. %s", nomeDisciplina));
-
             return "sucesso";
         } else {
-           // addErrorMessage("Error", "Nome e/ou disciplina inválido.");
+            
             return "Erro";
         }
     }
